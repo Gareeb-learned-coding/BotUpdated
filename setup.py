@@ -22,7 +22,12 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     install_requires=[
-        "discord.py",
+        "hikari",
+        "tanjun",
+        "spotipy",
+        "sqlite3",
+        "json",
+        "requests",
         "flask",
         "python-dotenv",
         "PyNaCl",
