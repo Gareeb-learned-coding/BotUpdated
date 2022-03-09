@@ -7,7 +7,7 @@ component = tanjun.Component()
 
 
 @component.with_command
-@tanjun.as_slash_command("Help", f"Get Help!!")
+@tanjun.as_slash_command("help", f"Get Help!!")
 async def interactive_post(
     ctx: SlashContext,
     bot: hikari.GatewayBot = tanjun.injected(type=hikari.GatewayBot),
