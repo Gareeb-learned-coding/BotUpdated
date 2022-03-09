@@ -1,7 +1,6 @@
 hikari
 spotipy
 requests
-json
 asyncio
 flask
 python-dotenv
