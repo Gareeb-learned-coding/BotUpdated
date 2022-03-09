@@ -1,4 +1,10 @@
-discord.py
+hikari
+spotipy
+sqlite3
+rquests
+json
+asyncio
+tanjun.abc
 flask
 python-dotenv
 PyNaCl
