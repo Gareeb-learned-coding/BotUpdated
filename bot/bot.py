@@ -15,7 +15,7 @@ def make_client(bot: hikari.GatewayBot) -> tanjun.Client:
         tanjun.Client.from_gateway_bot(
             bot,
             mention_prefix=True,
-            declare_global_commands=931146494164205588
+            declare_global_commands=845175380533051402
         )
     ).add_prefix("!")
 
