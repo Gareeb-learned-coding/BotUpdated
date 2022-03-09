@@ -168,6 +168,7 @@ async def interactive_post(
 
                 elif key == "0️⃣":
                     r = 0
+                    i = 10 * i
                     f = [response["items"][r+i]["track"]['uri']]
                     spotifyObject.playlist_remove_all_occurrences_of_items(playlist_id=g, items=f)
 
