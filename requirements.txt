@@ -1,6 +1,6 @@
 hikari
 spotipy
-rquests
+requests
 json
 asyncio
 flask
