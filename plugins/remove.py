@@ -172,10 +172,11 @@ async def interactive_post(
                     spotifyObject.playlist_remove_all_occurrences_of_items(playlist_id=g, items=f)
 
                     embed = hikari.Embed(title="", colour=0x00ffd5,description="Track Removed.")
-                    await ctx.edit_initial_response(embed=embed)
+                    await ctx.edit_initial_response(embed=embed, components=[], content="")
                 
                 elif key == "1️⃣":
                     r = 1
+                    i = 10 * i
                     f = [response["items"][r+i]["track"]['uri']]
                     spotifyObject.playlist_remove_all_occurrences_of_items(
                         playlist_id=g, items=f)
@@ -186,6 +187,7 @@ async def interactive_post(
                 
                 elif key == "2️⃣":
                     r = 2
+                    i = 10 * i
                     f = [response["items"][r+i]["track"]['uri']]
                     spotifyObject.playlist_remove_all_occurrences_of_items(
                         playlist_id=g, items=f)
@@ -196,6 +198,7 @@ async def interactive_post(
                 
                 elif key == "3️⃣":
                     r = 3
+                    i = 10 * i
                     f = [response["items"][r+i]["track"]['uri']]
                     spotifyObject.playlist_remove_all_occurrences_of_items(
                         playlist_id=g, items=f)
@@ -206,6 +209,7 @@ async def interactive_post(
 
                 elif key == "4️⃣":
                     r = 4
+                    i = 10 * i
                     f = [response["items"][r+i]["track"]['uri']]
                     spotifyObject.playlist_remove_all_occurrences_of_items(
                         playlist_id=g, items=f)
@@ -216,6 +220,7 @@ async def interactive_post(
 
                 elif key == "5️⃣":
                     r = 5
+                    i = 10 * i
                     f = [response["items"][r+i]["track"]['uri']]
                     spotifyObject.playlist_remove_all_occurrences_of_items(
                         playlist_id=g, items=f)
@@ -226,6 +231,7 @@ async def interactive_post(
 
                 elif key == "6️⃣":
                     r = 6
+                    i = 10 * i
                     f = [response["items"][r+i]["track"]['uri']]
                     spotifyObject.playlist_remove_all_occurrences_of_items(
                         playlist_id=g, items=f)
@@ -236,6 +242,7 @@ async def interactive_post(
 
                 elif key == "7️⃣":
                     r = 7
+                    i = 10 * i
                     f = [response["items"][r+i]["track"]['uri']]
                     spotifyObject.playlist_remove_all_occurrences_of_items(
                         playlist_id=g, items=f)
@@ -246,6 +253,7 @@ async def interactive_post(
 
                 elif key == "8️⃣":
                     r = 8
+                    i = 10 * i
                     f = [response["items"][r+i]["track"]['uri']]
                     spotifyObject.playlist_remove_all_occurrences_of_items(
                         playlist_id=g, items=f)
@@ -256,6 +264,7 @@ async def interactive_post(
 
                 elif key == "9️⃣":
                     r = 9
+                    i = 10 * i
                     f = [response["items"][r+i]["track"]['uri']]
                     spotifyObject.playlist_remove_all_occurrences_of_items(
                         playlist_id=g, items=f)
