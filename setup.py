@@ -25,7 +25,6 @@ setuptools.setup(
         "hikari",
         "tanjun",
         "spotipy",
-        "sqlite3",
         "json",
         "requests",
         "flask",
