@@ -21,3 +21,7 @@ async def interactive_post(
     ).add_field(name= f"Tracks (target)", value= f"Look at yours or others tracks in their playlist.")
 
     await ctx.edit_inital_response(embed=embed)
+
+@ tanjun.as_loader
+def load(client: tanjun.abc.Client) -> None:
+    client.add_component(component.copy())
