@@ -1,6 +1,5 @@
 hikari
 spotipy
-sqlite3
 rquests
 json
 asyncio
