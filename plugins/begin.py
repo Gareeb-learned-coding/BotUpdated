@@ -34,12 +34,12 @@ async def interactive_post(
     temp = c.fetchall()
     if len(temp) != 0:
         embed = hikari.Embed(title="", colour=0x00ffd5, description="You already have your own personal playlist.")
-        await ctx.edit_initial_response(embed=embed)
+        await ctx.respond(embed=embed)
     else:
         
         spotifyObject.user_playlist_create(user="31wts2xbpngwxvhblc5j3s2jsauq", name={title}, public=True, description={description})
         
-        await ctx.edit_initial_response("Playlist Created!")
+        await ctx.respond("Playlist Created!")
         
         pp = spotifyObject.user_playlists(user="31wts2xbpngwxvhblc5j3s2jsauq")
         q = pp['items'][0]['id']
