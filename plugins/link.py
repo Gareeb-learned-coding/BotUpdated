@@ -55,7 +55,7 @@ async def interactive_post(
         s = ' '.join(map(str, d))
         embed = hikari.Embed(
             title="", description=f"The playlist's link is :\n"+s[2:58]+"", color=0x00ffcc)
-        await ctx.edit_inital_response(embed=embed)
+        await ctx.respond(embed=embed)
 
 def get_token():
     headers = {'Authorization': 'Basic NWJjODIzMDI2M2EyNGI3NzhhYjQxMTRmN2EyMTVkMDY6YTM0ODU4YWUxZWNlNDE2MDg1MGQzOGE0NDEyYjNkOTg=', }
