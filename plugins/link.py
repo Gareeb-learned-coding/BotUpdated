@@ -39,14 +39,14 @@ async def interactive_post(
         if len(temp) == 0:
             embed = hikari.Embed(title="Error", colour=0x00ffd5,
                                  description="Huh, looks like this person doesn't have own one personal playlist yet.")
-            await ctx.edit_initial_response(embed=embed)
+            await ctx.respond(embed=embed)
 
         else:
             c.execute("SELECT playlist_link FROM database WHERE users_id = ?", (id,))
             d = c.fetchall()
             s = ' '.join(map(str, d))
             embed = hikari.Embed(title="", description=f"The playlist's link is :\n"+s[2:58]+"", color=0x00ffcc)
-            await ctx.edit_inital_response(embed=embed)
+            await ctx.respond(embed=embed)
     
     else:
         id = ctx.author.id
