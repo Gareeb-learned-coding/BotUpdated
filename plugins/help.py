@@ -20,7 +20,7 @@ async def interactive_post(
     ).add_field(name= f"Remove", value= f"Removes the track from your playlist."
     ).add_field(name= f"Tracks (target)", value= f"Look at yours or others tracks in their playlist.")
 
-    await ctx.edit_inital_response(embed=embed)
+    await ctx.respond(embed=embed)
 
 @ tanjun.as_loader
 def load(client: tanjun.abc.Client) -> None:
