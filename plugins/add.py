@@ -34,7 +34,7 @@ async def interactive_post(
     temp = c.fetchall()
     if len(temp) == 0:
         embed = hikari.Embed(title="", colour=0x00ffd5,description="You need a Personal Playlist first to use this command. \nUse the `begin` command to create one. \nUse the `add-common` command to add to the common playlist.")
-        await ctx.edit_initial_response(embed=embed)
+        await ctx.respond(embed=embed)
     else:
         def split(track):
             return list(track)
@@ -58,7 +58,7 @@ async def interactive_post(
 
         spotifyObject.playlist_add_items(playlist_id=g, items=[Uri])
         embed = hikari.Embed(title="", colour=0x00ffd5,description=f"Track added!")
-        await ctx.edit_initial_response(embed=embed)
+        await ctx.respond(embed=embed)
 
 def get_token():
     headers = {'Authorization': 'Basic NWJjODIzMDI2M2EyNGI3NzhhYjQxMTRmN2EyMTVkMDY6YTM0ODU4YWUxZWNlNDE2MDg1MGQzOGE0NDEyYjNkOTg=', }
