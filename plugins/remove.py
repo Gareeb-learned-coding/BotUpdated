@@ -283,11 +283,11 @@ async def interactive_post(
         await ctx.edit_initial_response("Waited for 60 seconds... Timeout.", embed=None, components=[])
 
 def get_token():
-    headers = {'Authorization': 'Basic NWJjODIzMDI2M2EyNGI3NzhhYjQxMTRmN2EyMTVkMDY6YTM0ODU4YWUxZWNlNDE2MDg1MGQzOGE0NDEyYjNkOTg=', }
+    headers = {'Authorization': 'Basic ZjUxZTBhNTE1NjlmNGQ0NjkxZTc1ZTFiYzU2MzE0YjU6NzQ0YmUwYzc2ZWQxNGNjOTk4Y2JiYzAwNmFhYmNjMTg=', }
 
     data = {
         'grant_type': 'refresh_token',
-        'refresh_token': "AQAIxWRAXRLsOuZ81K_MAMnR8qonzsouwG8hKzP1PnkYb4X0F3VfXIo_bzySMG7S2k4PMnxic15nyPOFMFj4V3Co3t6EAry_Rl6c6O_scw9-YEpJbiuUqSevZqMbCu63W1M",
+        'refresh_token': "AQBB3JUEtdC2zWAUySNsgWM1BNF58EYhWOd3GDzew6ggG6qdkvanyuDOphJF_j8VPTMKnBBCMOMAY4nCr53bqbqjGdraaXiA4Ih0xrhu0AonsgaWmFLtJYRZAQ6Aa-q7dqU",
     }
 
     response = requests.post(
