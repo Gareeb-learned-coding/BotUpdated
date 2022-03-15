@@ -41,7 +41,7 @@ async def interactive_post(
         embed = hikari.Embed(title="", colour=0x00ffd5, description="Playlist Created.")
         await ctx.respond(embed=embed)
         
-        pp = spotifyObject.user_playlists(user="31wts2xbpngwxvhblc5j3s2jsauq")
+        pp = spotifyObject.user_playlists(user="s814ch55pl3cdix8t3ztevrui")
         q = pp['items'][0]['id']
         o = pp['items'][0]['external_urls']['spotify']
         c.execute("INSERT INTO database VALUES (?, ?, ?)", (id, q, o))
